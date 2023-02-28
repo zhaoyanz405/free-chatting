@@ -19,5 +19,6 @@ user1向发送消user2息
 > RPUSH user2-channel msg from user1
 ```
 user1接收消息
+```bash
 > LPOP user1-channel
 ```
