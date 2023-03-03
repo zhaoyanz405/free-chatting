@@ -22,3 +22,17 @@ user1接收消息
 ```bash
 > LPOP user1-channel
 ```
+
+# v0.0.2
+
+通过redis命令进行消息收取，虽然勉强能够达到需求，但是实在太不方便了。因此，考虑增加命令行客户端，并提供以下接口，
+```bash
+$ fc join <channel-id>
+> hello
+(from your friend) hello!
+> how are you
+(from your friend) excellent!
+> bye!
+> \quit
+$ 
+```
