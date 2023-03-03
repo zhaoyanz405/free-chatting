@@ -1,5 +1,5 @@
 # Command Line Interface
-To suppport use this chat tool in shell environment, a well-designed command line interface is required. A prelimatery design will be documented in here.
+To suppport use this chat tool in shell environment, a well-designed command line interface is required. A preliminary design will be documented in here.
 
 ## Startup
 
@@ -7,7 +7,7 @@ This tools should be started with a shell command, like,
 ```bash
 $ fc start or fc join <channel-id>
 ```
-`fc` stands for our product `free-chatting`, `join` means to join a channel to start a conversation.
+`fc` stands for our product `free-chatting`, `join` means to join a channel, then start a conversation.
 
 ## Interactive terminal
 after joinning the channel, a interactive terminal should be activate. just like the `redis-cli` behaved.
@@ -33,3 +33,12 @@ joined success!
 send success (or error msg)
 (example-channel) _
 ```
+
+## Ideas
+
+### support to switch channel
+
+Same with the title.
+
+### hide the history
+We could add a special command or shortcut, to hide the history quickly. It would be useful when we don't want others know what we did when he approached. 
