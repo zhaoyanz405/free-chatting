@@ -1,3 +1,9 @@
+# Glossary
+
+## Channel
+
+In our cases, channel is a place, people send message to or fetch messages from 
+
 # Command Line Interface
 To suppport use this chat tool in shell environment, a well-designed command line interface is required. A preliminary design will be documented in here.
 
@@ -42,3 +48,16 @@ Same with the title.
 
 ### hide the history
 We could add a special command or shortcut, to hide the history quickly. It would be useful when we don't want others know what we did when he approached. 
+
+# Module Interface
+
+## Core interface
+
+The most important interfaces are, 
+- send_to
+- recv_from
+
+Obviously, `send_to` is to send a msg to the person you want to talk or the channel.
+`recv_from` is to recieve msg from which person or channel. It also reveals that the user must know what he/she is doing.
+
+
