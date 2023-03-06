@@ -2,7 +2,7 @@
 
 ## Channel
 
-In our cases, channel is a place, people send message to or fetch messages from 
+In our cases, channel is a place where people send message to or fetch messages from, even just two people (obviously it support more people).
 
 # Command Line Interface
 To suppport use this chat tool in shell environment, a well-designed command line interface is required. A preliminary design will be documented in here.
