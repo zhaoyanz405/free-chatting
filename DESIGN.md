@@ -60,4 +60,4 @@ The most important interfaces are,
 Obviously, `send_to` is to send a msg to the person you want to talk or the channel.
 `recv_from` is to recieve msg from which person or channel. It also reveals that the user must know what he/she is doing.
 
-
+![work process](/assets/design.drawio.png)
