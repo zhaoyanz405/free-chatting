@@ -32,9 +32,6 @@ $ fc join <channel-id>
 openning a termimal, waiting for joinning the channel.
 Joined success. ^.^ 
 
-openning a termimal, waiting for joinning the channel.
-Joined success. ^.^ 
-
 >>> Hi
 This is msg 76
 This is msg 5
