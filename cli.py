@@ -52,7 +52,7 @@ def interactive_terminal(channel):
                 print(msg_q.get())
 
             msg = input(">>> ")
-            if msg == 'exit' or msg == '\q':
+            if msg == 'exit' or msg.startswith('\q'):
                 break
 
             send(channel, msg)
