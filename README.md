@@ -1,9 +1,9 @@
 # free-chatting
 
-## what is fc?
+## What is fc?
 
 fc is a tools to help you talk with your friends, especially in the limited internet.
-watch out! when you use it,  we didn't encrypt the messages, it could be detect
+watch out! We didn't encrypt the messages when you use it, it could be detected
 by your company or internet provider. So please be careful.
 
 ## Quick Start
