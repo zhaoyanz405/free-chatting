@@ -1,6 +1,6 @@
-import time
 import queue
 import threading
+import time
 import traceback
 
 import click
@@ -8,17 +8,19 @@ import click
 from msg import send, recv
 
 
-
 @click.group()
 def cli():
     pass
+
 
 @click.command()
 @click.argument("channel")
 def join(channel):
     interactive_terminal(channel)
 
+
 cli.add_command(join)
+
 
 def recv_loop(channel, q, event):
     while not event.is_set():
