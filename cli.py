@@ -56,6 +56,8 @@ def interactive_terminal(channel):
                 break
 
             send(channel, msg)
+    except KeyboardInterrupt:
+        print("Abort. will exit.")
 
     except Exception as e:
         print(traceback.format_exc())
