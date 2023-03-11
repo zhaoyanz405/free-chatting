@@ -28,7 +28,7 @@ def recv_loop(channel, q, event):
             continue
 
         q.put(msg)
-        time.sleep(1) # for testing
+        time.sleep(2) # for testing
 
 
 def interactive_terminal(channel):
