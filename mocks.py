@@ -1,20 +1,13 @@
-def string(max_length):
+def msg(func):
     """only for testing
 
     Args:
         channel (_type_): _description_
 
     """
-    def deco(func):
-        def wrap(*args, **kwargs):
-            import random
-            
-            res = ""
-            for i in range(random.randint(0, max_length)):
-                res += random.choice('abcdefghijklmnopqrstuvwxyz ') # include the space
-
-            return res
-        
-        return wrap
+    def wrap(*args, **kwargs):
+        from random import randint
+        res = "This is msg %d" % randint(0, 100)
+        return res
     
-    return deco
+    return wrap
