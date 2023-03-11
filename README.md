@@ -1,38 +1,36 @@
 # free-chatting
-chat with your friends in shell
 
-# v0.0.1
+## what is fc?
 
-我们将在v0.1初步支持chat功能。具体方案设想如下，
+fc is a tools to help you talk with your friends, especially in the limited internet.
+watch out! when you use it,  we didn't encrypt the messages, it could be detect
+by your company or internet provider. So please be careful.
 
-- 使用redis作为云端存储。
-- 使用redis-client作为客户端。
-- 所有消息借助redis进行存取。
+## Quick Start
+### Installation
 
-## 消息存取设计
+#### via PYPI
 
-由于消息具有时序性。因此考虑使用队列进行存储。
-通过两个key存储对话双方的消息。例如
+#### setuptools
 
-user1向发送消user2息
+Clone this repo, and run
 ```bash
-> RPUSH user2-channel msg from user1
-```
-user1接收消息
-```bash
-> LPOP user1-channel
+$ python setup.py install
 ```
 
-# v0.0.2
+### Start your conversation
 
-通过redis命令进行消息收取，虽然勉强能够达到需求，但是实在太不方便了。因此，考虑增加命令行客户端，并提供以下接口，
+Create your chat-room
+```bash
+$ fc create
+xxxxxx
+```
+
+Join it.
 ```bash
 $ fc join <channel-id>
-> hello
-(from your friend) hello!
-> how are you
-(from your friend) excellent!
-> bye!
-> \quit
-$ 
+openning a termimal, waiting for joinning the channel.
+Joined success. ^.^ 
+
+>>>
 ```
