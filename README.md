@@ -32,5 +32,20 @@ $ fc join <channel-id>
 openning a termimal, waiting for joinning the channel.
 Joined success. ^.^ 
 
+openning a termimal, waiting for joinning the channel.
+Joined success. ^.^ 
+
+>>> Hi
+This is msg 76
+This is msg 5
+>>> How are you
+This is msg 13
+This is msg 50
+>>> Bye
+This is msg 77
+This is msg 22
+>>> \q
+closing the terminal
+closed.
 >>>
 ```
