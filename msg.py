@@ -1,3 +1,6 @@
+import mocks
+
+
 def send(channel, msg):
     """Send msg to a channel
 
@@ -7,6 +10,7 @@ def send(channel, msg):
     """
 
 
+@mocks.string(30)
 def recv(channel, timeout):
     """fetch msg from a channel
 
