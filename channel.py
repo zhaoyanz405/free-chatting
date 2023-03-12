@@ -3,6 +3,12 @@ import redis
 
 r = redis.Redis(host='localhost', port=6379, db=0)
 
+def create() -> str:
+    """Create a channel
+
+    Returns:
+        str: channel-id
+    """
 
 def send(channel, msg):
     """Send msg to a channel
@@ -20,7 +26,7 @@ def recv(channel, timeout):
 
     Args:
         channel (string): channel id
-        timeout (int): time limit for fetching
+        timeout (int): time limit for tje fetching
     """
     msg = r.blpop(channel, timeout=timeout)
     if msg:
