@@ -14,7 +14,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/zhaoyanz405/free-chatting",
     author="zhaoyanz405,jyeeee",
-    author_email="zhaoyanz405@gmail.com,jyeeee@jye.com,",
+    author_email="zhaoyanz405@gmail.com,jyeeee1019@gmail.com,",
     py_modules=[
         'cli',
         'msg',

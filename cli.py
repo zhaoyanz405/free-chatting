@@ -5,7 +5,7 @@ import traceback
 
 import click
 
-from msg import send, recv
+from channel import send, recv
 
 
 @click.group()
